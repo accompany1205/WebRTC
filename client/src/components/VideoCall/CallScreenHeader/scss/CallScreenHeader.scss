@@ -1,0 +1,124 @@
+@import "../../../../assets/scss/base/_variables.scss";
+.frame-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $white;
+  border-radius: 0 0 0 10px;
+  overflow: hidden;
+  .header-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    flex: 1;
+    border-right: 1px solid rgb(245, 245, 245);
+    position: relative;
+    .alert-circle-icon {
+      position: absolute;
+      background: $btnBackgroundColor;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid $white;
+      top: 10px;
+      right: 20px;
+    }
+    .connected-count {
+      font-size: 16px;
+      position: absolute;
+      top: 3px;
+      right: 8px;
+    }
+    &.date-block {
+      font-size: 20px;
+      color: $dateColor;
+      min-width: 120px;
+      font-weight: 400;
+    }
+    &.icon-block {
+      font-size: 18px;
+      .icon {
+        color: $icon_header;
+        font-size: 23px;
+        &.profile {
+          font-size: 30px;
+          color: $btnBackgroundColor;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        background: $icon_hover;
+      }
+    }
+    &.time-block {
+      font-size: 18px;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1824px) {
+  //1824px Max Size
+  @import "./callheader1824px";
+}
+
+@media only screen and (max-width: 1280px) {
+  //1280 Surface Pro 7
+
+  @import "./callheader1280px";
+}
+
+@media only screen and (max-width: 1024px) {
+  //1024 Mest Hub
+
+  @import "./callheader1024px";
+}
+
+@media only screen and (max-width: 912px) {
+  //912 Surface Pro 7
+  //820 Ipade Air
+  //768 Ipade Mini
+  @import "./callheader912px";
+}
+
+@media only screen and (max-width: 540px) {
+  // New meeting and enter code in verticaly set pending
+  //540 Surface Duo
+  //412 Iphone XR
+  //412 Sansung Galaxy S20 Ultra
+  //414 Samsang Galaxy a51/71
+  @import "./callheader540px";
+}
+
+@media only screen and (max-width: 416px) {
+  // New meeting and enter code in verticaly set pending
+  //393 Pixel5
+  //390 12Pro
+  //375 SE
+  // 360 Samsumng Galaxy s8
+  @import "./callheader416px";
+}
+
+@media only screen and (max-width: 393px) {
+  // New meeting and enter code in verticaly set pending
+  //393 Pixel5
+  //390 12Pro
+  //375 SE
+  // 360 Samsumng Galaxy s8
+  @import "./callheader390px";
+}
+
+@media only screen and (max-width: 282px) {
+  // New meeting and enter code in verticaly set pending
+  //393 Pixel5
+  //390 12Pro
+  //375 SE
+  // 360 Samsumng Galaxy s8
+  @import "./callheader282px";
+}

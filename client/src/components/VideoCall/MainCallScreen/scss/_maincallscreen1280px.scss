@@ -1,0 +1,194 @@
+
+  .video-grid-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    .video-container {
+      display: flex;
+      flex: 1;
+      max-height: 100%;
+      max-width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      .Dish {
+        overflow: scroll;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        flex: 1;
+        background: $black;
+        .div-video {
+          position: relative;
+          vertical-align: middle;
+          align-self: center;
+          overflow: hidden;
+          display: inline-block;
+          margin-left: 2px;
+          margin-right: 2px;
+          animation: show 0.4s ease;
+          .participant-name {
+            position: absolute;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: $white;
+            z-index: 2;
+            bottom: 0;
+            margin-left: 28px;
+            margin-bottom: 5px;
+          }
+          .icon-block {
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            background: $white;
+            border: 1px solid $iconblock_border;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px;
+            margin-bottom: 6px;
+            .icon {
+              color: $icon_main;
+              font-size: 14px;
+              &.red {
+                color: $icon_red;
+              }
+            }
+            &.red-bg {
+              background: $icon_red;
+              .icon {
+                color: $white;
+              }
+            }
+          }
+
+          &:after {
+            color: #aaa;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            bottom: 20px;
+            left: 23px;
+            font-weight: 100;
+            content: attr(data-aspect);
+            display: block;
+          }
+          &:before {
+            position: absolute;
+            height: 100%;
+            background-size: 100% 100%;
+            width: 100%;
+            opacity: 0.3;
+            font-weight: 100;
+            content: "";
+            display: block;
+          }
+        }
+        .field-error-block {
+          display: flex;
+          margin: 5px;
+          align-items: center;
+          justify-content: space-between;
+          .error-field {
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+            color: $red;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: $errorBlockBGcolor;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .guest-user-detail-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .signin-block {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        padding: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: none;
+        outline: none;
+        width: 100%;
+        background: none;
+        border-radius: 5px;
+        color: $white;
+        background: $btnBackgroundColor;
+        text-decoration: none;
+        .icon-block {
+          padding-right: 10px;
+        }
+        &:hover {
+          background: $btnHoverColor;
+        }
+      }
+      .input-block {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        flex: 1;
+        .input-section {
+          position: relative;
+          width: 100%;
+          .icon-block {
+            position: absolute;
+            top: 50%;
+            transform: translate(10px, -50%);
+            color: $iconColor;
+          }
+          input {
+            font-size: 16px;
+            height: 48px;
+            border: 1px solid $inputBGcolor;
+            border-radius: 5px;
+            padding-left: 35px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+          }
+        }
+      }
+    }
+    .field-error-block {
+      display: flex;
+      margin: 5px;
+      align-items: center;
+      justify-content: space-between;
+      .error-field {
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+        color: $red;
+      }
+    }
+  }
+

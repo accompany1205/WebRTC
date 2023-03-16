@@ -1,0 +1,51 @@
+.green-room-container {
+  flex: 1;
+  display: flex;
+  //flex-direction: column;
+  //align-items: center;
+  justify-content: space-around;
+  
+}
+
+@media only screen and (max-width: 912px) {
+  //912 Surface Pro 7
+  //820 Ipade Air
+  //768 Ipade Mini
+  @import "./greenroom_container912px.scss";
+}
+
+@media only screen and (max-width: 540px) {
+  // New meeting and enter code in verticaly set pending
+  //540 Surface Duo
+  //412 Iphone XR
+  //412 Sansung Galaxy S20 Ultra
+  //414 Samsang Galaxy a51/71
+  @import "./greenroom_container912px.scss";
+}
+
+@media only screen and (max-width: 416px) {
+  // New meeting and enter code in verticaly set pending
+  //393 Pixel5
+  //390 12Pro
+  //375 SE
+  // 360 Samsumng Galaxy s8
+  @import "./greenroom_container912px.scss";
+}
+
+@media only screen and (max-width: 393px) {
+  // New meeting and enter code in verticaly set pending
+  //393 Pixel5
+  //390 12Pro
+  //375 SE
+  // 360 Samsumng Galaxy s8
+  @import "./greenroom_container912px.scss";
+}
+
+@media only screen and (max-width: 282px) {
+  // New meeting and enter code in verticaly set pending
+  //393 Pixel5
+  //390 12Pro
+  //375 SE
+  // 360 Samsumng Galaxy s8
+  @import "./greenroom_container912px.scss";
+}

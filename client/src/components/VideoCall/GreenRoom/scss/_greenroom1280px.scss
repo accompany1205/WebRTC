@@ -1,0 +1,287 @@
+.left-side {
+  max-width: 45%;
+  min-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .divider {
+    width: 100%;
+    height: 2px;
+    background: $greenroomDivider;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .input-section {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .dropdown-menu {
+    margin-top: 10px;
+    font-size: 18px;
+    height: 35px;
+    border: 1px solid $inputBGcolor;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .sub-title {
+    top: 20px;
+    font-size: 18px;
+  }
+  .signin-block {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      padding: 15px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border: none;
+      outline: none;
+      width: 100%;
+      background: none;
+      border-radius: 5px;
+      color: $white;
+      background: $btnBackgroundColor;
+      text-decoration: none;
+      .icon-block {
+        padding-right: 10px;
+      }
+      &:hover {
+        background: $btnHoverColor;
+      }
+    }
+    .error-info {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: $red;
+        background-color: $errorBlockBGcolor;
+        text-align: center;
+      }
+    .input-block {
+      margin-left: 5px;
+      margin-right: 5px;
+      display: flex;
+      flex: 1;
+      .input-section {
+        position: relative;
+        width: 100%;
+        .icon-block {
+          position: absolute;
+          top: 50%;
+          transform: translate(10px, -50%);
+          color: $iconColor;
+        }
+        input {
+          font-size: 16px;
+          height: 48px;
+          border: 1px solid $inputBGcolor;
+          border-radius: 5px;
+          padding-left: 35px;
+          width: 100%;
+          box-sizing: border-box;
+          outline: none;
+        }
+      }
+     
+    }
+  }
+  
+  .div-video {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    vertical-align: middle;
+    align-self: center;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    animation: show 0.4s ease;
+    .participant-name {
+      position: absolute;
+      display: flex;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: $white;
+      z-index: 2;
+      bottom: 0;
+      margin-left: 28px;
+      margin-bottom: 5px;
+    }
+    .icon-block {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      background: $white;
+      border: 1px solid $white;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5px;
+      margin-bottom: 6px;
+      .icon {
+        color: #555;
+        font-size: 14px;
+        &.red {
+          color: $red;
+        }
+      }
+      &.red-bg {
+        background: $red;
+        .icon {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.right-side {
+  max-width: 45%;
+  min-width: 45%;
+  .field-error-block {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-between;
+    .error-field {
+      font-size: 14px;
+      width: 100%;
+      box-sizing: border-box;
+      color: $red;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: $errorBlockBGcolor;
+      text-align: center;
+    }
+  }
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .divider {
+    width: 100%;
+    height: 2px;
+    background: $greenroomDivider;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .input-section {
+    font-size: 18px;
+    font-weight: 300;
+  }
+ 
+  .sub-title {
+    top: 18px;
+    font-size: 14px;
+  }
+
+  .signin-block {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      padding: 15px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border: none;
+      outline: none;
+      width: 100%;
+      background: none;
+      border-radius: 5px;
+      color: $white;
+      background: $btnBackgroundColor;
+      text-decoration: none;
+      .icon-block {
+        padding-right: 10px;
+      }
+      &:hover {
+        background: $btnHoverColor;
+      }
+    }
+    .error-info {
+      font-size: 18px;
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+      color: $red;
+      background-color: $errorBlockBGcolor;
+      text-align: center;
+    }
+    .input-block {
+      margin-left: 5px;
+      margin-right: 5px;
+      display: flex;
+      flex: 1;
+      .input-section {
+        position: relative;
+        width: 100%;
+        .icon-block {
+          position: absolute;
+          top: 50%;
+          transform: translate(10px, -50%);
+          color: $iconColor;
+        }
+        input {
+          font-size: 18px;
+          height: 48px;
+          border: 1px solid $inputBGcolor;
+          border-radius: 5px;
+          padding-left: 35px;
+          padding-top: 10px;
+          width: 100%;
+          box-sizing: border-box;
+          outline: none;
+        }
+      }
+      .input-section label {
+        position: absolute;
+        pointer-events: none;
+        transform: translate(0, 15px) scale(1);
+        transform-origin: top left;
+        transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+        color: $iconColor;
+        font-size: 18px;
+        font-weight: 380;
+        line-height: 1;
+        left: 35px;
+      }
+      .input-section:focus-within label {
+        transform: translate(0, 5px) scale(0.8);
+        color: $flottingLableColor;
+      }
+      .input-section .filled {
+        transform: translate(0, 5px) scale(0.8);
+      }
+    }
+  }
+}

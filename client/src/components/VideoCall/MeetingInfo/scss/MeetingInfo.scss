@@ -1,0 +1,148 @@
+@import "../../../../assets/scss/base/variables";
+.meeting-info-block {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  width: 310px;
+  .meeting-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #222;
+    h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .icon {
+      cursor: pointer;
+      font-size: 18px;
+    }
+  }
+  .add-people-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #04796a;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    .icon {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+  .info-text {
+    color: #222;
+    font-size: 14px;
+  }
+  .meet-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f3f5;
+    padding: 15px;
+    border-radius: 5px;
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      outline: none;
+      background: none;
+      flex: 1;
+      color: #555;
+    }
+    .icon {
+      cursor: pointer;
+      color: #555;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .permission-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      color: #4385f4;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+  .small-text {
+    font-size: 12px;
+    color: #222;
+  }
+  .meeting-toggle-switch {
+    display: flex;
+    .icon {
+      color: #4385f4;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+  .small-text {
+    font-size: 12px;
+    color: #222;
+  }
+}
+
+
+@media only screen and (min-width: 1824px) {
+  //1824px Max Size
+  @import "./meetinginfo1824px";
+}
+
+@media only screen and (max-width: 1280px) {
+  //1280 Surface Pro 7
+
+  @import "./meetinginfo1280px";
+}
+
+@media only screen and (max-width: 1024px) {
+  //1024 Mest Hub
+
+  @import "./meetinginfo1024px";
+}
+
+@media only screen and (max-width: 912px) {
+  //912 Surface Pro 7
+  //820 Ipade Air
+  //768 Ipade Mini
+  @import "./meetinginfo912px";
+}
+
+@media only screen and (max-width: 540px) {
+  
+  //540 Surface Duo
+  //412 Iphone XR
+  //412 Sansung Galaxy S20 Ultra
+  //414 Samsang Galaxy a51/71
+  @import "./meetinginfo540px";
+}
+
+@media only screen and (max-width: 416px) {
+ 
+  @import "./meetinginfo416px";
+}
+@media only screen and (max-width: 393px) {
+  
+  //393 Pixel5
+  //390 12Pro
+  //375 SE
+  // 360 Samsumng Galaxy s8
+  @import "./meetinginfo390px";
+}
+
+
+@media only screen and (max-width: 282px) {
+ 
+  @import "./meetinginfo282px";
+}

@@ -1,0 +1,64 @@
+.no-match {
+  .no-match__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    h2 {
+      font-size: 38px;
+      font-weight: 300;
+    }
+    .btn {
+      cursor: pointer;
+      font-size: 16px;
+      padding: 15px;
+      border: none;
+      outline: none;
+      background: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  }
+}
+@media only screen and (min-width: 1824px) {
+  //1824px Max Size
+  @import "./nomatchurl1824px";
+}
+
+@media only screen and (max-width: 1280px) {
+  //1280 Surface Pro 7
+
+  @import "./nomatchurl1280px";
+}
+
+@media only screen and (max-width: 1024px) {
+  //1024 Mest Hub
+
+  @import "./nomatchurl1024px";
+}
+
+@media only screen and (max-width: 912px) {
+  //912 Surface Pro 7
+  //820 Ipade Air
+  //768 Ipade Mini
+  @import "./nomatchurl912px";
+}
+
+@media only screen and (max-width: 540px) {
+  // New meeting and enter code in verticaly set pending
+  //540 Surface Duo
+  //412 Iphone XR
+  //412 Sansung Galaxy S20 Ultra
+  //414 Samsang Galaxy a51/71
+  @import "./nomatchurl540px";
+}
+
+@media only screen and (max-width: 393px) {
+  // New meeting and enter code in verticaly set pending
+  //393 Pixel5
+  //390 12Pro
+  //375 SE
+  // 360 Samsumng Galaxy s8
+  @import "./nomatchurl390px";
+}

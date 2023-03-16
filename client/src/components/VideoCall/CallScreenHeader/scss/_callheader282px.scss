@@ -1,0 +1,62 @@
+.frame-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $white;
+  border-radius: 0 0 0 10px;
+  overflow: hidden;
+  .header-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    flex: 1;
+    border-right: 1px solid rgb(245, 245, 245);
+    position: relative;
+    .alert-circle-icon {
+      position: absolute;
+      background: $btnBackgroundColor;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid $white;
+      top: 8px;
+      right: 7px;
+    }
+    .connected-count {
+      font-size: 14px;
+      position: absolute;
+      top: 3px;
+      right: 2px;
+    }
+    &.date-block {
+      font-size: 18px;
+      color: $dateColor;
+      min-width: 80px;
+      font-weight: 400;
+    }
+    &.icon-block {
+      font-size: 14px;
+      .icon {
+        color: $icon_header;
+        font-size: 18px;
+        &.profile {
+          font-size: 20px;
+          color: $btnBackgroundColor;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        background: $icon_hover;
+      }
+    }
+    &.time-block {
+      font-size: 14px;
+      padding-bottom: 0px;
+    }
+  }
+}
